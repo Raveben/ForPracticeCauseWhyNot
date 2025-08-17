@@ -15,3 +15,5 @@ void fibonacci();
 void reverse_a_string();
 
 void prime_number();
+
+void pyramid_5();

@@ -11,7 +11,8 @@ int main() {
 	// all_even_number();
 	// fibonacci();
 	// reverse_a_string();
-	prime_number();
+	// prime_number();
+	pyramid_5();
 }
 
 
@@ -130,4 +131,29 @@ void prime_number() {
 		}
 	}
 	cout << endl;
+}
+
+
+void pyramid_5() {
+	for (int i = 1; i <= 5; i++)
+	{
+		
+		for (int a = 5; a > i; a--)
+		{
+			cout << " ";
+		}
+
+		for (int j = 0; j < i; j++)
+		{
+			cout << "*";
+		}
+
+		for (int k = 1; k < i; k++)
+		{
+			cout << "*";
+		}
+
+		cout << "\n";
+
+	}
 }
