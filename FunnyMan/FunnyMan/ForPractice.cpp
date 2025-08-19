@@ -12,7 +12,9 @@ int main() {
 	// fibonacci();
 	// reverse_a_string();
 	// prime_number();
-	pyramid_5();
+	// pyramid_5();
+	// losange_10();
+	advanced_losange();
 }
 
 
@@ -46,7 +48,7 @@ void countdown() {
 	cin >> startingNumber;
 	for (int i = startingNumber; i >= 1; i--)
 	{
-		cout << i  << "\n";
+		cout << i << "\n";
 	}
 	cout << "Go !";
 }
@@ -56,8 +58,8 @@ void factorial_calculation() {
 	cout << "Entrez un nombre: ";
 	cin >> nombre;
 	int accumule = 1;
-	for (int i = 1; i <= nombre ; i++) {
-	
+	for (int i = 1; i <= nombre; i++) {
+
 		accumule *= i;
 	}
 	cout << nombre << "! = " << accumule << endl;
@@ -122,7 +124,7 @@ void prime_number() {
 		for (int i = 2; i < num; i++) {
 			if (num % i == 0) {
 				isPrime = false;
-				break; 
+				break;
 			}
 		}
 
@@ -137,7 +139,7 @@ void prime_number() {
 void pyramid_5() {
 	for (int i = 1; i <= 5; i++)
 	{
-		
+
 		for (int a = 5; a > i; a--)
 		{
 			cout << " ";
@@ -155,5 +157,120 @@ void pyramid_5() {
 
 		cout << "\n";
 
+	}
+}
+
+
+void losange_10() {
+	for (int i = 1; i <= 5; i++)
+	{
+		for (int j = 5; j > i; j--)
+		{
+			cout << " ";
+		}
+
+		for (int k = 1; k < i; k++)
+		{
+			cout << "*";
+		}
+
+		for (int a = 1; a <= i; a++)
+		{
+			cout << "*";
+		}
+
+		cout << "\n";
+	}
+
+	for (int i = 1; i <= 5; i++)
+	{
+
+		for (int j = 1; j < i; j++)
+		{
+			cout << " ";
+		}
+
+		for (int k = 5; k >= i; k--)
+		{
+			cout << "*";
+		}
+
+
+		for (int a = 4; a >= i; a--)
+		{
+			cout << "*";
+		}
+		cout << "\n";
+	}
+}
+
+
+void advanced_losange() {
+
+	for (int i = 1; i <= 5; i++)
+	{
+		for (int j = 5; j > i; j--)
+		{
+			cout << " ";
+		}
+
+		for (int k = 1; k <= i; k++)
+		{
+			if (k == 1) {
+				cout << "/";
+			}
+			else {
+				cout << " ";
+			}
+		}
+
+		for (int a = 1; a <= i; a++)
+		{
+			if (a == i) {
+				cout << "\\";
+			}
+			else {
+				cout << " ";
+			}
+
+		}
+
+		cout << "\n";
+	}
+
+	for (int i = 1; i <= 5; i++)
+	{
+
+		for (int j = 1; j < i; j++)
+		{
+
+			cout << " ";
+		}
+
+		for (int k = 5; k >= i; k--)
+		{
+			if (k == 5) {
+				cout << "\\";
+			}
+			else {
+				cout << " ";
+			}
+			
+		}
+
+
+		for (int a = 5; a >= i; a--)
+		{
+			if (a == i) {
+				cout << "/";
+			}
+
+			else {
+				cout << " ";
+			}
+
+		
+		}
+		cout << "\n";
 	}
 }

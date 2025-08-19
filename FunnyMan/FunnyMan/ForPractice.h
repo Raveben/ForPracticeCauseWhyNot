@@ -17,3 +17,7 @@ void reverse_a_string();
 void prime_number();
 
 void pyramid_5();
+
+void losange_10();
+
+void advanced_losange();
